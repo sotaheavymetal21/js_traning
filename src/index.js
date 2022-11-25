@@ -1,6 +1,6 @@
-// /**
-//  *  const, let等の変数宣言
-//  */
+/**
+ *  const, let等の変数宣言
+ */
 
 // var val1 = "var変数";
 // console.log(val1);
@@ -50,14 +50,47 @@
 /**
  * テンプレート文字列
  */
-const name = "そうた";
-const age = 24;
-//　「私の名前はそうたです。年齢は24歳です。」
-export { };
-//　従来の方法
-const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";
-console.log(message1);
+// const name = "そうた";
+// const age = 24;
+// //　「私の名前はそうたです。年齢は24歳です。」
 
-// テンプレート文字列を用いた方法
-const message2 = `私の名前は${name}です。年齢は${age}です。`;
-console.log(message2);
+// //　従来の方法
+// const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";
+// console.log(message1);
+
+// // テンプレート文字列を用いた方法
+// const message2 = `私の名前は${name}です。年齢は${age}です。`;
+// console.log(message2);
+
+/**
+ * アロー関数
+ */
+// 従来の関数
+// function func1(str) {
+//     return str;
+// }
+const func1 = function (str) {
+    return str;
+}
+console.log(func1("func1です"));
+
+// アロー関数
+const func2 = (str) => {
+    return str;
+}
+console.log(func2("func2です"));
+
+// returnを書かなくても良い
+const func3 = (str) => str;
+console.log(func3("func3です"))
+
+const func4 = (num1, num2) => {
+    return num1 + num2;
+};
+console.log(func4(10, 20));
+
+const func5 = (num1, num2) => num1 + num2;
+console.log(func5(10, 20));
+
+
+
